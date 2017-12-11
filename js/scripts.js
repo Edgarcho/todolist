@@ -13,7 +13,7 @@ $(document).ready(function() {
     var newTask = new task(inputTask);
 
     $("ul#List").append("<li><span class='listItem'>" + newTask.taskName + "</span></li>");
-    $("ul#List").children("li").first().click(function() {
+    $("ul#List").children("li").click(function() {
   $(this).remove();});
     //$(".listItem").last().click(function() {
       //$("#show-task h2").text(newTask.taskName);
